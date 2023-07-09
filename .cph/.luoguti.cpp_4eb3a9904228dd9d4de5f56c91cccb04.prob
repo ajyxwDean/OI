@@ -1,0 +1,1 @@
+{"name":"Local: luoguti","url":"d:\\OI\\luoguti.cpp","tests":[{"id":1683613839744,"input":"2\n2 1","output":"5"},{"id":1684641419699,"input":"3\n6 3 5","output":"49"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OI\\luoguti.cpp","group":"local","local":true}
