@@ -1,0 +1,1 @@
+{"name":"Local: BigInt","url":"d:\\OI\\BigInt.cpp","tests":[{"id":1690273508749,"input":"1\n1","output":"2"},{"id":1690273517427,"input":"1001\n9099","output":"10100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OI\\BigInt.cpp","group":"local","local":true}

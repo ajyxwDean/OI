@@ -1,0 +1,1 @@
+{"name":"Local: BigIntRedu","url":"d:\\OI\\BigIntRedu.cpp","tests":[{"id":1690274432295,"input":"999\n1000","output":"-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OI\\BigIntRedu.cpp","group":"local","local":true}

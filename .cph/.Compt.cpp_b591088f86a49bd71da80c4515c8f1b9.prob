@@ -1,0 +1,1 @@
+{"name":"Local: Compt","url":"d:\\OI\\Compt.cpp","tests":[{"id":1690370039583,"input":"215\n10\n13\n24\n35\n67\n19\n22\n86\n100\n12\n65","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OI\\Compt.cpp","group":"local","local":true}

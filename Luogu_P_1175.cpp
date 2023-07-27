@@ -130,7 +130,7 @@ void solveCalc() {
                 dat.push(tmp);
             }
             while(!dat.empty()) {
-                char tmp = dat.empty();
+                char tmp = dat.top();
                 dat.pop();
                 op.push(tmp);
             }

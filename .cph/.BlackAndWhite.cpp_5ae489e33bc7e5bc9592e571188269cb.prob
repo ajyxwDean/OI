@@ -1,0 +1,1 @@
+{"name":"Local: BlackAndWhite","url":"d:\\OI\\BlackAndWhite.cpp","tests":[{"id":1690361829915,"input":"6 9 \n....#.\n.....#\n......\n......\n......\n......\n......\n#@...#\n.#..#.\n0 0","output":"45"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OI\\BlackAndWhite.cpp","group":"local","local":true}

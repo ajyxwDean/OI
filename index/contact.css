@@ -1,0 +1,16 @@
+    /* CSS样式 */
+    .contact-info {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 10px solid #a0db79;
+        border-radius: 5px;
+        font-family: Jetbrains Mono;
+
+      }
+      .contact-info h2 {
+        text-align: center;
+      }
+      .contact-info p {
+        margin-bottom: 10px;
+}
