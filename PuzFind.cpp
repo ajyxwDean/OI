@@ -1,4 +1,5 @@
 //https://www.acgo.cn/problemset/2074/info?homeworkId=57&teamCode=1664181761155715072
+//ACED
 /// @author LStylus
 /// @brief Puzzle Find
 #include <bits/stdc++.h>
