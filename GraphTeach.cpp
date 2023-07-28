@@ -5,7 +5,9 @@ int n; //图的顶点数量
 //Adjacency Matrix(邻接矩阵,n号点和m号点相连接 --> AdjMat[n][m] = 1):
 int /*bool*/AdjMat[MAXN][MAXN]; //无向无权图
 //Adjacency Matrix End
-
+//Adjacency List(邻接表):
+int AdjLi[MAXN][MAXN];
+//Adjacency List End
 
 /// @brief init The Adjacency Matrix
 /// @author LStylusAFO
