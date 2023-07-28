@@ -6,7 +6,7 @@ int n; //图的顶点数量
 int /*bool*/AdjMat[MAXN][MAXN]; //无向无权图
 //Adjacency Matrix End
 //Adjacency List(邻接表):
-int AdjLi[MAXN][MAXN];
+std::vector<int> AdjMat[MAXN];
 //Adjacency List End
 
 /// @brief init The Adjacency Matrix
