@@ -1,0 +1,1 @@
+{"name":"Local: Graph5-Advan","url":"d:\\OI\\Graph5-Advan.cpp","tests":[{"id":1690531796592,"input":"3 2 1 3\n1 2\n2 3","output":"Yes"},{"id":1690531805280,"input":"3 2 1 3\n1 2\n2 1","output":"No"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OI\\Graph5-Advan.cpp","group":"local","local":true}
