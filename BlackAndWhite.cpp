@@ -14,6 +14,7 @@ void dfs(int x, int y) {
             vis[x1][y1] = 1;
             cnt ++;
             dfs(x1, y1);
+            vis[x1][y1] = 0;
             // cnt ++;
         }
     }
