@@ -1,0 +1,1 @@
+{"name":"Local: dp1_ggdj","url":"d:\\OI\\dp1_ggdj.cpp","tests":[{"id":1690697780186,"input":"3\n1 2 5\n11","output":"3"},{"id":1690697789560,"input":"1\n2\n3","output":"-1"},{"id":1690697795474,"input":"2\n19\n0","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OI\\dp1_ggdj.cpp","group":"local","local":true}
