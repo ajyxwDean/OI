@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #include <stack>
-const int MAXN = 1005;
+const int MAXN = 10000005;
 using namespace std;
 template <typename T>inline void read(T &a){
     T s=0,w=1;
@@ -24,6 +24,8 @@ int main() {
         int _in[MAXN], _out[MAXN];
         int n;
         read(n);
+        memset(_in, 0, sizeof _in);
+        memset(_out, 0, sizeof _out);
         for(int i = 1 ; i <= n; i++) read(_in[i]);
         for(int i = 1; i <= n; i++) read(_out[i]);
         stack<int> stk;
