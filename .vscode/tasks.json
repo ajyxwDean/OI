@@ -29,13 +29,21 @@
         },
         {
             "type": "shell",
-            "label": "prepare",
+            "label": "prepareCPP",
             "command" : "copy",
             "args": [
                 "${workspaceFolder}\\template.cpp",
-                "${workspaceFolder}\\luoguti.cpp"
+                "${workspaceFolder}\\${fileBasenameNoExtension}.cpp"
             ],
-            "problemMatcher":[]
+            "problemMatcher": []
+        }, 
+        {
+            "type" : "shell",
+            "label": "Turn off the Echo",
+            "command" : "@echo",
+            "args": [
+                "off"
+            ]
         }
     ],
     "presentation": {
