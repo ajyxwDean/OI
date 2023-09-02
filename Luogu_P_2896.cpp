@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;//Ctrl + \ 注释, Ctrl + L 选中当前行
 const int MAXN = 1e5 + 5;typedef unsigned long long ull;
-const int INF = 0x7fffffff;
 #define ll                 long long
 #define LL                 long long
 template <typename T>inline void read(T &a){
@@ -13,7 +12,9 @@ template <typename T>inline void read(T &a){
     a = s * w;
 }
 //=============================
-
+int n;
+int a[MAXN];
+int flag = 0;
 //=============================
 int main(){
     clock_t Time = clock();
@@ -21,7 +22,9 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    read(n);
+    for(int i = 1; i <= n; i++) read(a[i]);
+    for(int i = 1; i <= n - 1; i++) if(a[i] < a[i + 1]) flag = 1;
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

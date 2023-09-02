@@ -1,7 +1,7 @@
+//Capital to Little
 #include <bits/stdc++.h>
 using namespace std;//Ctrl + \ 注释, Ctrl + L 选中当前行
 const int MAXN = 1e5 + 5;typedef unsigned long long ull;
-const int INF = 0x7fffffff;
 #define ll                 long long
 #define LL                 long long
 template <typename T>inline void read(T &a){
@@ -13,7 +13,11 @@ template <typename T>inline void read(T &a){
     a = s * w;
 }
 //=============================
-
+void toLittle(char* cap, size_t _size) {
+    for(int i = 0; i <= _size; i++) {
+        cap[i] |= 32;
+    }
+}
 //=============================
 int main(){
     clock_t Time = clock();
