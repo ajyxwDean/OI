@@ -7,7 +7,8 @@ const int INF = 0x7fffffff;
 template <typename T>inline void read(T &a){
     T s = 0, w = 1; char ch = getchar();
     while (!isdigit(ch)){
-        if (ch == '-') w = -1; ch = getchar();
+        if (ch == '-') w = -1; 
+        ch = getchar();
     }
     while (isdigit(ch)) s = s * 10 + ch - 48,ch = getchar();
     a = s * w;

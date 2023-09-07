@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
+#include <algorithm>
 using namespace std;//Ctrl + \ 注释, Ctrl + L 选中当前行
 const int MAXN = 1e5 + 5;typedef unsigned long long ull;
+const int INF = 0x7fffffff;
 #define ll                 long long
 #define LL                 long long
 template <typename T>inline void read(T &a){
@@ -12,11 +14,17 @@ template <typename T>inline void read(T &a){
     while (isdigit(ch)) s = s * 10 + ch - 48,ch = getchar();
     a = s * w;
 }
+int gcd(int a, int b) {
+    return b ? gcd(b, a % b) : a;//ubuntu
+}
 //=============================
-int n;
-int a[MAXN];
-int dp[MAXN], dp1[MAXN];
-int flag = 0;
+int huZhi(int a) {
+    int cnt = 0;
+    for(int i = 1; i < a; i++) {
+        if(gcd(a, i) == 1) cnt++;
+    }
+    return cnt;
+}
 //=============================
 int main(){
     clock_t Time = clock();
@@ -24,23 +32,9 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
-    read(n);
-    for(int i = 1; i <= n; i++) read(a[i]);
-    int cnt = 1;
-    dp[1] = a[1];
-    for(int i = 2; i <= n; i++) { 
-        if(a[i] >= dp[cnt]) dp[++cnt] = a[i];
-        else *upper_bound(dp + 1, dp + cnt + 1, a[i]) = a[i];
-    }
-    int ans = cnt;  
-    cnt = 1;
-    dp1[cnt] = a[1];
-    for(int i = 2; i <= n; i++) {
-        if(a[i] <= dp1[cnt]) dp1[++cnt] = a[i];
-        else *upper_bound(dp1 + 1, dp1 + cnt + 1, a[i], greater<int>()) = a[i];
-    }
-    cout << n - max(cnt, ans) << endl;
+    int a;
+    cin >> a;
+    cout << huZhi(a);
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;
