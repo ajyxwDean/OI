@@ -18,7 +18,8 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
-
+const double PI = 3.14;
+int r, h;
 //=============================
 int main(){
     clock_t Time = clock();
@@ -26,7 +27,9 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    read(r, h);
+    double buk = PI * r * r * h;
+    cout << 2000 / buk + 1;
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

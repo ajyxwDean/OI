@@ -2,6 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "MinecraftGame",
+            "request": "launch",
+            "mainClass": "MinecraftGame",
+            "projectName": "OI_3d95613"
+        },
+        {
             "name": "(gdb) Launch",
             "preLaunchTask": "Build",
             "type": "cppdbg",

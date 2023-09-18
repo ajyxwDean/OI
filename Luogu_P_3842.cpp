@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <iostream>
 using namespace std;//Ctrl + \ 注释, Ctrl + L 选中当前行
 const int MAXN = 1e5 + 5;typedef unsigned long long ull;
 const int INF = 0x7fffffff;

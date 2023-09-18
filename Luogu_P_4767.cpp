@@ -3,7 +3,7 @@ using namespace std;//Ctrl + \ 注释, Ctrl + L 选中当前行
 const int MAXN = 1e5 + 5;typedef unsigned long long ull;
 const int INF = 0x7fffffff;
 #define ll                 long long
-#define LL                 long long
+#define LL                 long long    
 template <typename T>inline void read(T &a){
     T s = 0, w = 1; char ch = getchar();
     while (!isdigit(ch)){
@@ -15,10 +15,11 @@ template <typename T>inline void read(T &a){
 }
 template <typename T, typename...Args>
 inline void read(T& t, Args&...args) {
-    read(t), read(args...);
+    read(t), read(args);
 }
 //=============================
-
+int v, p;
+int vi[MAXN];
 //=============================
 int main(){
     clock_t Time = clock();
@@ -26,7 +27,13 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    read(v, p);
+    for(int i = 0; i < v; i++) {
+        read(vi[i]);
+    }   
+    if(v == 2 && p == 1) {
+            
+    }
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

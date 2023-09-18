@@ -18,6 +18,13 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
+struct Node{
+    int next;
+    int to;
+    int w;
+};
+
+Node G[MAXN];
 
 //=============================
 int main(){

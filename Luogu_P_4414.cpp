@@ -18,7 +18,8 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
-
+int a, b, c, x, y, z, sum;
+char ch;
 //=============================
 int main(){
     clock_t Time = clock();
@@ -26,7 +27,17 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    read(x, y, z);
+    sum = x + y + z;
+    a = min(min(x, y), z);
+    c = max(max(x, y), z);
+    b = sum - a - c;
+    for(int i = 1; i <= 3; i++) {
+        cin >> ch;
+        if(ch == 'A') cout << a << " ";
+        else if(ch == 'B') cout << b << " ";
+        else cout << c << " ";
+    }
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

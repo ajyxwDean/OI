@@ -26,7 +26,9 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    int a, b, c;
+    read(a, b, c);
+    cout << a << " " << b << " " << c;
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

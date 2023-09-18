@@ -13,12 +13,11 @@ template <typename T>inline void read(T &a){
     while (isdigit(ch)) s = s * 10 + ch - 48,ch = getchar();
     a = s * w;
 }
-template <typename T, typename...Args>
-inline void read(T& t, Args&...args) {
-    read(t), read(args...);
-}
 //=============================
-
+char sa[MAXN], sb[MAXN];
+int a[MAXN], b[MAXN];
+int c[MAXN];
+int lena, lenb, len;
 //=============================
 int main(){
     clock_t Time = clock();
@@ -26,7 +25,23 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    cin >> sa >> sb;
+    lena = strlen(sa);
+    lenb = strlen(sb);
+    for(int i = 1; i <= lena; i++) a[i] = sa[lena - i] - '0';
+    for(int i = 1; i <= lenb; i++) b[i] = sb[lenb - i] - '0';
+    for(int i = 1; i <= lenb; i++)
+        for(int j = 1; j <= lena; j++)
+            c[i + j - 1] += a[j] * b[i];
+    for(int i = 1; i < lena + lenb; i++)
+        if(c[i] >= 10) {
+            c[i + 1] += c[i] / 10;
+            c[i] %= 10;
+        }
+    len = lena + lenb;  
+    while(c[len] == 0 && len > 1) len --;
+    for(int i = len; i >= 1; i--) cout << c[i];
+
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;
