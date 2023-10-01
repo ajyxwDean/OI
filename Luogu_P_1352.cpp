@@ -19,7 +19,18 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
-int a, b;
+int n;
+int a[MAXN];
+int f[MAXN][2];
+vector<int> E[MAXN];
+void dfs(int x, int fa) {
+    for(int i = 0; i < E[i].size(); i++) {
+        int v = E[x][i];
+        if(v == fa) continue;
+        f[x][0] = max(f[v][0], f[v][1]);
+        f[x][1] = a[x] + f[v][0];
+    }
+}
 //=============================
 int main(){
     clock_t Time = clock();
@@ -27,7 +38,16 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    read(n);
+    for(int i = 1; i <= n; i++) read(a[i]);
+    for(int i = 0; i < n; i++) {
+        int u, v;
+        read(u, v);
+        E[u].push_back(v);
+        E[v].push_back(u);
+    }
+    dfs(1, 0);
+    cout << max(f[1][1], f[1][0]);
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

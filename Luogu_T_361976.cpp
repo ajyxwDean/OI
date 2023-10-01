@@ -19,7 +19,7 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
-int a, b;
+float a, b, c, d;
 //=============================
 int main(){
     clock_t Time = clock();
@@ -27,7 +27,12 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    cin >> a >> b >> c >> d;
+    // cout << a << " " << b << " " << c << " " << d << "\n";
+    float aa = a * b + c * d;
+    printf("%.1f\n", aa);
+    printf("%.1f", aa / (b + d));
+
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

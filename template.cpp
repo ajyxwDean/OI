@@ -2,8 +2,9 @@
 using namespace std;//Ctrl + \ 注释, Ctrl + L 选中当前行
 const int MAXN = 1e5 + 5;typedef unsigned long long ull;
 const int INF = 0x7fffffff;
-#define ll                 long long
-#define LL                 long long
+#define RI register int;
+#define ll long long
+#define LL long long
 template <typename T>inline void read(T &a){
     T s = 0, w = 1; char ch = getchar();
     while (!isdigit(ch)){

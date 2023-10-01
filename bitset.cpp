@@ -1,3 +1,4 @@
+//BitSet
 #include <bits/stdc++.h>
 using namespace std;//Ctrl + \ 注释, Ctrl + L 选中当前行
 const int MAXN = 1e5 + 5;typedef unsigned long long ull;
@@ -19,7 +20,7 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
-int a, b;
+bitset<size_t(91)>  a;
 //=============================
 int main(){
     clock_t Time = clock();

@@ -19,7 +19,7 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
-int a, b;
+int c, t;
 //=============================
 int main(){
     clock_t Time = clock();
@@ -27,7 +27,20 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    read(c, t);
+    int ch, th;
+    if(t == 0 || c == 0) {
+        cout << "0 0";
+    }
+    for(int i = 1; i <= t / 2; i++) {
+        for(int j = 0; j <= t; j++) {
+            if(i + j == c && 2 * i + j == t) {
+                cout << i << " " << j;
+                return 0;
+            }   
+        }
+    }
+    cout << "Error";
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

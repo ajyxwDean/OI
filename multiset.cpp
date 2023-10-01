@@ -19,7 +19,7 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
-int a, b;
+multiset<int> ms;
 //=============================
 int main(){
     clock_t Time = clock();
@@ -27,7 +27,6 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

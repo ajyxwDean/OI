@@ -19,7 +19,16 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
-int a, b;
+struct node {
+    int nxt, to;
+}e[MAXN];
+int head[MAXN];
+int tot = 0;
+void add(int from, int to) {
+    e[tot].to = to;
+    e[tot].nxt = head[from];
+    head[from] = tot++;
+}
 //=============================
 int main(){
     clock_t Time = clock();

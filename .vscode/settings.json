@@ -5,8 +5,8 @@
     //"editor.formatOnType": true,//敲完一行代码自动格式化
     "editor.smoothScrolling": true,//使编辑器滚动变平滑
     "editor.tabCompletion": "on",//启用Tab补全
-    "editor.fontFamily":"'Ubuntu Mono', 'JetBrains Mono'",//字体设置，个人喜欢Jetbrains Mono作英文字体，思源黑体作中文字体
-    // "'JetBrains Mono', 'Ubuntu Mono'"
+    // "editor.fontFamily":"'Ubuntu Mono', 'JetBrains Mono'",
+    "editor.fontFamily":"'JetBrains Mono', 'Ubuntu Mono'",//字体设置，个人喜欢Jetbrains Mono作英文字体，思源黑体作中文字体
     "editor.fontLigatures": true,//启用字体连字
     "editor.detectIndentation": false,//不基于文件内容选择缩进用制表符还是空格
     /*
@@ -190,6 +190,7 @@
 "[python]": {
     "editor.defaultFormatter": "ms-python.autopep8"
 },
-"python.formatting.provider": "none", //禁用“运行选中部分的代码”功能（个人喜好，感觉这个功能很鸡肋）
+"python.formatting.provider": "none",
+"cmake.sourceDirectory": "D:/OI", //禁用“运行选中部分的代码”功能（个人喜好，感觉这个功能很鸡肋）
 //需要注意的是，所有命令前都有一个空格，用来“喂给”上一次运行结尾的“请按任意键继续. . .”
 }
