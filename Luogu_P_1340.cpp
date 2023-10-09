@@ -19,6 +19,19 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
+int n, w;
+struct node {
+    int to, nxt, w;
+}E[MAXN];
+int head[MAXN];
+int tot = 0;
+void add(int from, int to, int w) {
+    E[tot].to = to;
+    E[tot].nxt = head[from];
+    E[tot].w = w;
+    head[from] = tot++;
+}
+
 //=============================
 int main(){
     clock_t Time = clock();
@@ -26,7 +39,14 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    read(n, w);
+    for(int i = 1; i <= w; i++) {
+        int u, v ,w;
+        read(u, v, w);
+        add(u, v ,w);
+        add(v, u, w);
+    }
+
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

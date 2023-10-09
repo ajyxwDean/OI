@@ -19,6 +19,8 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
+int n, m;
+int w[MAXN], t;
 //=============================
 int main(){
     clock_t Time = clock();
@@ -26,7 +28,18 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    read(n, m);
+    for(int i = 0; i < n; i++) read(w[i]);
+    int p = m;
+    while(p<=n) {
+        for(int i = 0; i < m; i++) {
+            w[i]--;
+            if(!w[i]) w[i] = w[p++];
+        }
+        t++;
+    }
+    for(int i = 0; i < m; i++) if(w[i] > w[0]) w[0] = w[i];
+    cout << t + w[0];
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

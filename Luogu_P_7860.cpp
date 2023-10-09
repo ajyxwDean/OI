@@ -19,6 +19,7 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
+
 //=============================
 int main(){
     clock_t Time = clock();

@@ -1,3 +1,9 @@
+/*
+    CSP-J 2023 10.1模拟赛
+    T4 分组
+    Powered by LStylus
+*/
+//1.00s 128.00MB
 #include <bits/stdc++.h>
 using namespace std;//Ctrl + \ 注释, Ctrl + L 选中当前行
 const int MAXN = 1e5 + 5;typedef unsigned long long ull;
@@ -19,6 +25,11 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
+int x, g, y;
+string Same[MAXN][2], Diff[MAXN][2];
+struct Group {
+    string a1, b , c;
+}a[MAXN];
 //=============================
 int main(){
     clock_t Time = clock();
@@ -26,7 +37,7 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    cout << 0;
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;

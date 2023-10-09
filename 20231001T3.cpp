@@ -1,3 +1,9 @@
+/*
+    20231001T3.cpp 1.00s 128.00MB
+    10.1模拟赛
+    T3 子序列
+    Powered by LStylus
+*/
 #include <bits/stdc++.h>
 using namespace std;//Ctrl + \ 注释, Ctrl + L 选中当前行
 const int MAXN = 1e5 + 5;typedef unsigned long long ull;
@@ -26,10 +32,10 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    printf("0\n0\n0\n0\n0\n");
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;
     #endif
     return 0;
-}
+}   

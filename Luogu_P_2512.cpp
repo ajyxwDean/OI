@@ -19,6 +19,8 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
+int n;
+int a[MAXN];
 //=============================
 int main(){
     clock_t Time = clock();

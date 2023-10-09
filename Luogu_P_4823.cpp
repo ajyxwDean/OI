@@ -19,6 +19,11 @@ inline void read(T& t, Args&...args) {
     read(t), read(args...);
 }
 //=============================
+int n;
+int a[MAXN];
+int b[MAXN];//h[i] = a[i] + b[i];
+int s[MAXN];//H - a[i] - b[i] <= s[i] -> 出去
+int h;
 //=============================
 int main(){
     clock_t Time = clock();
@@ -26,7 +31,10 @@ int main(){
         freopen("in.in","r",stdin);freopen("out.out","w",stdout);
     #endif
     //=============================
-    
+    read(n);
+    for(int i = 1; i <= n; i++)
+        read(a[i] ,b[i]);
+    read(h);
     //=============================
     #ifdef LOCAL
         cerr << "Time Used:" << clock() - Time << "ms" << endl;
