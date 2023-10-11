@@ -1,44 +1,31 @@
-#include <cstdio>
-#include <algorithm>
-#include <iostream>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
-
-typedef long long LL;
-
-const int N = 100005;
-
 struct city {
-	string s;
-	int p, cost;
-	int ans; 
-};
-
-city c[N];
-int n = 0;
-int cmp(city a, city b) {
-	return a.p < b.p; 
+	int ans, l, p;
+    string s;
+}c[150];
+int n;
+bool cmp(city a, city b) {
+	if(a.ans != b.ans) return a.ans < b.ans;
+    else return a.l < b.l;
 }
 
 int main(){
-	cin.tie(0); cout.tie(0);
-	LL x, y;
-	string str;
-	while(cin >> x >> y >> str) {
-		n++;
-		c[n].s = str;
-		c[n].p = x;
-		c[n].cost = y;
-	} 
-	for(int i = 1; i <= n; i++) {//mb
+    // freopen("in.in", "r", stdin);
+    // freopen("out.out", "w", stdout);
+    while(cin >> c[n].p >> c[n].l >> c[n].s) n ++;//{
+    //     if(c[n].s == "Moscow" && !c[n].l) break;
+    //     else n++;
+    // }
+    for(int i = 0; i < n; i++) {
 		c[i].ans = 0;
-		for(int j = 2; j <= n; j++) {//cz
-			//ans +=
-			c[j].ans += c[j].p * abs(c[i].cost - c[j].cost);
+		for(int j = 0; j < n; j++) {
+            c[i].ans += abs(c[j].l - c[i].l) * c[j].p;
 		}
 	}
-	sort(c + 1, c + n + 1, cmp);
-	cout << c[n].s << " " << c[n].ans;
+	sort(c, c + n, cmp);
+	cout << c[0].s << ' ' << c[0].ans;
+    // fclose(stdin);
+    // fclose(stdout);
 	return 0;
 }
