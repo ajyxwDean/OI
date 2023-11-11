@@ -5,4 +5,6 @@
 
 using namespace std;
 
-const int N = 
+const int N = 5e2 + 5;
+
+int n, k;

@@ -21,11 +21,9 @@ int main() {
     int m = sum / n;
     for(int i = 1; i <= n; i++) a[i] -= m;
     for(int i = 1; i < n; i++) {
-        if(a[i] == 0) continue;
-        if(a[i] != 0) {
-            a[i + 1] += a[i];
-            cnt++;
-        }
+        // if(a[i] == 0) continue;
+        a[i + 1] += a[i];
+        cnt += abs(a[i]);
     }
     printf("%d", cnt);
     // fclose(stdin);

@@ -1,8 +1,8 @@
 #include <iostream>
-#include <cstdio>
-#include <cstring>
 #include <algorithm>
+#include <cstdio>
+#include <cstdlib>
 
 using namespace std;
 
-const int N = 
+const int N = 1e5 + 10;

@@ -6,7 +6,7 @@
     "editor.smoothScrolling": true,//使编辑器滚动变平滑
     "editor.tabCompletion": "on",//启用Tab补全
     // "editor.fontFamily":"'Ubuntu Mono', 'JetBrains Mono'",
-    "editor.fontFamily":"'Cascadia Code', 'Ubuntu Mono'",//字体设置，个人喜欢Jetbrains Mono作英文字体，思源黑体作中文字体
+    "editor.fontFamily":"'consolas', '系统字体'",//字体设置，个人喜欢Jetbrains Mono作英文字体，思源黑体作中文字体
     "editor.fontLigatures": true,//启用字体连字
     "editor.detectIndentation": false,//不基于文件内容选择缩进用制表符还是空格
     /*
@@ -51,8 +51,7 @@
     /*workbench*/
     "workbench.list.smoothScrolling": true,//使文件列表滚动变平滑
     "workbench.editor.enablePreview": false,//打开文件时不是“预览”模式，即在编辑一个文件时打开编辑另一个文件不会覆盖当前编辑的文件而是新建一个标签页
-    "workbench.editor.wrapTabs": true,//编辑器标签页在空间不足时以多行显示
-    "workbench.editor.untitled.hint": "hidden",//隐藏新建无标题文件时的“选择语言？”提示（个人喜好，可以删掉此行然后Ctrl+N打开无标题新文件看看不hidden的效果）
+    "workbench.editor.wrapTabs": true, //隐藏新建无标题文件时的“选择语言？”提示（个人喜好，可以删掉此行然后Ctrl+N打开无标题新文件看看不hidden的效果）
     /*explorer*/
     "explorer.confirmDelete": false,//删除文件时不弹出确认弹窗（因为很烦）
     "explorer.confirmDragAndDrop": false,//往左边文件资源管理器拖动东西来移动/复制时不显示确认窗口（因为很烦）

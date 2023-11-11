@@ -18,11 +18,11 @@ inline long long Rand(long long mod = 100000000) {
 signed main() {
     freopen("out.out", "w", stdout);
 	srand((long long)new char);
-	int n = Rand(1e5);
-    printf("%lld\n", n);
-    for(int i = 1; i <= n ;i++) {
-        int a = Rand(1e5);
-        printf("%lld\n", a);
-    }
+	int t;
+    scanf("%d", &t);
+    // while(t--) {
+        int a = Rand(), b = Rand(), c = Rand();
+        printf("%d %d %d", a, b, c);
+    // }
 	return 0;
 }

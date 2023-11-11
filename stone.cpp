@@ -1,8 +1,12 @@
+//stone.cpp
 #include <iostream>
 #include <cstdio>
-#include <cstring>
 #include <algorithm>
+#include <queue>
 
 using namespace std;
 
-const int N = 
+int main() {
+	std::priority_queue<int> q;
+    
+}
