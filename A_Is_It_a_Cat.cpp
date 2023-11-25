@@ -33,7 +33,6 @@ using std::list;
 #endif
 
 int n;
-int tt;
 
 signed main()
 {
@@ -42,4 +41,7 @@ signed main()
 
     
     return 0;
+}
+int main(){
+    
 }

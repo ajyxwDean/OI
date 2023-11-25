@@ -23,13 +23,11 @@ using std::nth_element;
 using std::unique;
 using std::min;
 using std::max;
-using std::string;
 #ifdef STL_INCLUDE
 using std::queue;
 using std::stack;
 using std::deque;
 using std::list;
-
 #endif
 
 int n;
@@ -40,6 +38,11 @@ signed main()
     ios::sync_with_stdio(false);
     cin.tie(0), cout.tie(0);
 
-    
+    cin >> tt;
+//  cin >> n;
+    while(tt --)
+    {
+
+    }
     return 0;
 }

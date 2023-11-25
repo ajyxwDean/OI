@@ -10,6 +10,7 @@
 #include <queue>
 #include <stack>
 #include <list>
+#include <cmath>
 #endif
 const int N = 1e5 + 10;
 
@@ -33,13 +34,27 @@ using std::list;
 #endif
 
 int n;
-int tt;
+// int tt;
+ll a, b, p;
+
+ll QuickPow(ll x, ll y, ll z) {
+    ll ans = 1, base = x;
+    while(y > 0)
+    {
+        if(y & 1) ans *= base, ans %= z;
+        base *= base;
+        y >>= 1;
+    }
+    return ans;
+}
+
 
 signed main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0), cout.tie(0);
 
-    
+    cin >> a >> b >> p;
+    cout << a << "^" << b << " mod " << p << "=" << QuickPow(a, b, p);
     return 0;
 }

@@ -22,16 +22,12 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(0), cout.tie(0);
     cin >> n >> k;
-    for(ll i = 1; i <= n; i++)
+    for(ll i = 0; i < n; i++)
     {
         cin >> a[i];
     }
-    sort(a + 1, a + n + 1);
-    // for(ll i = 1; i <= n; i++)
-    // {
-    //     cout << a[i] << " ";
-    // }
-    cout << a[k + 1];
+    nth_element(a, a + k, a + n);
+    cout << a[k];
     return 0;
 }
 

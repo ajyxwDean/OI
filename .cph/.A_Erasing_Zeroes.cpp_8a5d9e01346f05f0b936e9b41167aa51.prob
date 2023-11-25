@@ -1,0 +1,1 @@
+{"name":"A. Erasing Zeroes","group":"Educational Codeforces Round 82 (Rated for Div. 2)","url":"https://codeforces.com/contest/1303/problem/A","interactive":false,"memoryLimit":256,"timeLimit":1000,"tests":[{"input":"3\n010011\n0\n1111000\n","output":"2\n0\n0\n","id":1700315445482}],"input":{"type":"stdin"},"output":{"type":"stdout"},"srcPath":"d:\\OI\\A_Erasing_Zeroes.cpp"}

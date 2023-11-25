@@ -1,33 +1,73 @@
-#include<iostream>
-#include<cstdio>
-#include<cmath>
-using namespace std;
-struct node{
-	double x;
-	double y;
+#define STL_INCLUDE
+#include <iostream>
+#include <cstdlib>
+#include <stdint.h>
+#include <cstdio>
+#include <algorithm>
+#ifdef STL_INCLUDE
+#include <cstring>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <list>
+#include <cmath>
+#endif
+const int N = 1e5 + 10;
+
+using ll = long long;
+using LL = ll;
+using std::cin;
+using std::cout;
+using std::ios;
+using std::sort;
+using std::nth_element;
+using std::unique;
+using std::min;
+using std::max;
+using std::string;
+using std::sqrt;
+using std::abs;
+#ifdef STL_INCLUDE
+using std::queue;
+using std::stack;
+using std::deque;
+using std::list;
+
+#endif
+
+double Distance(Point a, Point b) ;
+bool Comapre(Point f, Point s);
+
+struct Point {
+    double x, y;
 };
-struct node point[200005];
-double dis(node a,node b)
+
+Point p[N];
+int n;
+const ll INF = 0xffffffffff;
+ll ans = -INF;
+
+signed main()
 {
-	return sqrt((a.x-b.x)*(a.x-b.x)+(a.y-b.y)*(a.y-b.y));
+    ios::sync_with_stdio(false);
+    cin.tie(0), cout.tie(0);
+
+    cin >> n;
+    for(int i = 1; i <= n; i++)
+    {
+        cin >> p[i].x >> p[i].y;
+    }
+    
+
+    return 0;
 }
-int main()
+
+double Distance (Point a, Point b)
 {
-	int n;
-	cin>>n;
-	for(int i=1;i<=n;i++)
-	{
-		cin>>point[i].x>>point[i].y;
-	}
-	double minn=1<<31-1;
-	for(int i=1;i<=n;i++)
-	{
-		for(int j=1;j<=n;j++)
-		{
-			if(i==j)continue;
-			if(minn>=dis(point[i],point[j]))minn=dis(point[i],point[j]);
-		}
-	}
-	printf("%.4lf\n",minn);
-	return 0;
+    return (double)(sqrt(fabs(a.x - b.x) * fabs(a.x - b.x) + fabs(a.y - b.y) * fabs(a.y - b.y)));
+}
+
+bool Compare(Point f, Point s)
+{
+    return f.x < s.x;
 }

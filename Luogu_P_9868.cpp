@@ -23,23 +23,28 @@ using std::nth_element;
 using std::unique;
 using std::min;
 using std::max;
-using std::string;
 #ifdef STL_INCLUDE
 using std::queue;
 using std::stack;
 using std::deque;
 using std::list;
-
+using std::string;
 #endif
 
 int n;
-int tt;
+int m;
+string s[N];
 
 signed main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0), cout.tie(0);
 
-    
+    cin >> n;
+    cin >> m;
+    for(int i = 1; i <= n; i++)
+    {
+        cin >> s[i];
+    }
     return 0;
 }
