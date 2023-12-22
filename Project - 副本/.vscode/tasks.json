@@ -1,0 +1,58 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "C:\\MinGW\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-DLOCAL",
+                "-Wall"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },"presentation": { 
+                "panel": "new"
+            },
+            "detail": "调试器生成的任务。"
+        },
+        {
+            "type": "shell",
+            "label": "prepareCPP",
+            "command" : "copy",
+            "args": [
+                "${workspaceFolder}\\template.cpp",
+                "${workspaceFolder}\\${fileBasenameNoExtension}.cpp"
+            ],
+            "problemMatcher": []
+        }, 
+        {
+            "type" : "shell",
+            "label": "Turn off the Echo",
+            "command" : "@echo",
+            "args": [
+                "off"
+            ]
+        }
+    ],
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",  //任务间不共享面板, 同一个任务共享相同面板.
+        "showReuseMessage": false, //控制是否显示“终端将被任务重用, 按任意键关闭”提示.
+        "clear": false
+    },
+    "version": "2.0.0"
+}

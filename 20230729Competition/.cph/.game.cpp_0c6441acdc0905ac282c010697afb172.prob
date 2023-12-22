@@ -1,1 +1,0 @@
-{"name":"Local: game","url":"d:\\OI\\20230729Competition\\game.cpp","tests":[{"id":1690629880870,"input":"abcd 5\n3\n1\n2 hjl\n4","output":"a"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\OI\\20230729Competition\\game.cpp","group":"local","local":true}

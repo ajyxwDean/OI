@@ -32,30 +32,31 @@ using std::list;
 
 #endif
 
-int a[N];
-int b[N];
-int n;
-int ans = 1 << 30;
+const int INF = 0x7fffffff;
 
-int main()
+int n, mn = INF;
+int a[12];
+int b[12];
+
+signed main()
 {
-    int n;
-    int ans = 1 << 30;
-    for(int i = 0; i < n; i++)
+    ios::sync_with_stdio(false);
+    cin.tie(0), cout.tie(0);
+
+    cin >> n;
+    for(int i = 0; i < n; i++) cin >> a[i] >> b[i];
+    for(int i = 1; i < (1 << n); i++)
     {
-        cin >> a[i] >> b[i];
-    }
-    for(int s = 1; s < (1 << n); s++) {
-        int tots = 1, totc = 0;
-        for(int i = 0; i < n; i++)
-        {
-            if(s & (i << i)) {
-                tots *= a[i];
-                totc += b[i];
+        int s = 1, bi = 0;
+        for(int j = 0; j < n; j++) {
+            if((i >> j) & 1)
+            {
+                s *= a[j];
+                bi += b[j];
             }
         }
-        ans = min(ans, abs(tots - totc));
+        mn = min(mn, abs(s - bi));
     }
-    cout << ans << '\n';
+    cout << mn;
     return 0;
 }

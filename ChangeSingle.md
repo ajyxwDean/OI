@@ -30,3 +30,6 @@ int main()
     return 0;
 }
 ```
+
+## View : Show Simple Editor Tab
+## 搜索 : Editor Tab

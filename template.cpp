@@ -24,13 +24,6 @@ using std::unique;
 using std::min;
 using std::max;
 using std::string;
-#ifdef STL_INCLUDE
-using std::queue;
-using std::stack;
-using std::deque;
-using std::list;
-
-#endif
 
 int n;
 int tt;
