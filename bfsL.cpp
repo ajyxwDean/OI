@@ -16,8 +16,17 @@ inline void IOS() {
 
 void Solve();
 
-int n, m;
-vector<int> a(N);
+int n, m, ans = -INF;
+vector<int> a[N];
+
+void dfs(int x) {
+    for(int t : a[x]) {
+        if(a[t] > a[x]) {
+            d[x] = 
+            dfs(t);
+        }
+    }
+}
 
 signed main() {
     IOS();

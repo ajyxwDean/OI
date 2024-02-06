@@ -23,7 +23,7 @@
     "editor.renderControlCharacters": true,//编辑器中显示不可见的控制字符
     "editor.renderWhitespace": "boundary",//除了两个单词之间用于分隔单词的一个空格，以一个小灰点的样子使空格可见
     /*terminal*/
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",//将终端设为cmd，个人比较喜欢cmd作为终端
+    "terminal.integrated.defaultProfile.windows": "PowerShell",//将终端设为cmd，个人比较喜欢cmd作为终端
     "terminal.integrated.cursorBlinking": true,//终端光标闪烁
     "terminal.integrated.rightClickBehavior": "default",//在终端中右键时显示菜单而不是粘贴（个人喜好）
     /*files*/
@@ -49,7 +49,7 @@
         "**/dist/**": true
     },
     /*workbench*/
-    "workbench.editor.showTabs": true,
+    "workbench.editor.showTabs": "multiple",
     "workbench.list.smoothScrolling": true,//使文件列表滚动变平滑
     "workbench.editor.enablePreview": false,//打开文件时不是“预览”模式，即在编辑一个文件时打开编辑另一个文件不会覆盖当前编辑的文件而是新建一个标签页
     "workbench.editor.wrapTabs": true, //隐藏新建无标题文件时的“选择语言？”提示（个人喜好，可以删掉此行然后Ctrl+N打开无标题新文件看看不hidden的效果）
@@ -83,7 +83,7 @@
     "html": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\"",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
     "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -Wall -DDEBUG -DLOCAL -std=c++14 && $dir$fileNameWithoutExt -std=c++14"
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -Wall -DDEBUG -DLOCAL -std=c++2a && $dir$fileNameWithoutExt -std=c++14"
     /*这是每种语言运行时所执行命令的对应表，因为笔者使用的语言有限，这里只列出了javascript、python和windows批处理的命令，其他语言的命令可自行添加*/
     /*笔者其他博客中可能会有关于对此设置项的添加或删改的内容*/
 },
@@ -193,6 +193,12 @@
 "python.formatting.provider": "none",
 "cmake.sourceDirectory": "D:/OI",
 "workbench.editor.empty.hint": "hidden",
-"emmet.triggerExpansionOnTab": false, //禁用“运行选中部分的代码”功能（个人喜好，感觉这个功能很鸡肋）
+"emmet.triggerExpansionOnTab": false,
+"C_Cpp.errorSquiggles": "disabled", //禁用“运行选中部分的代码”功能（个人喜好，感觉这个功能很鸡肋）
 //需要注意的是，所有命令前都有一个空格，用来“喂给”上一次运行结尾的“请按任意键继续. . .”
+"terminal.integrated.profiles.windows": {
+    "Powershell 7.4.1": {
+        "path": "C:\\Users\\Lenovo\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    }
+}
 }

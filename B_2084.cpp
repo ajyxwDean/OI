@@ -16,8 +16,7 @@ inline void IOS() {
 
 void Solve();
 
-int n, m;
-vector<int> a(N);
+ll n, p;
 
 signed main() {
     IOS();
@@ -26,8 +25,11 @@ signed main() {
 }
 
 void Solve() {
-    scanf("%d %d", &n, &m);
-    for(int i = 1; i <= n; i++) {
-        scanf("%d", &a[i]);
+    cin >> n >> p;
+    for(int i = 2; i < n; i++) {
+        if(n % i == 0) {
+            cout << n / i << '\n';
+            exit(0);
+        }
     }
 }

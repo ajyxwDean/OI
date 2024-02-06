@@ -1,36 +1,44 @@
-#define STL_INCLUDE
 #include <iostream>
-#include <cstdlib>
-#include <stdint.h>
-#include <cstdio>
 #include <algorithm>
-#ifdef STL_INCLUDE
-#include <cstring>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <list>
-#endif
-const int N = 1e5 + 10;
-const int INF = 0x7fffffff;
+#include <cstdio>
+#include <cmath>
+#include <vector>
 
+using namespace std;
+
+const int N  = 26;
+const int INF = 0x7fffffff;
 using ll = long long;
 using LL = ll;
-using std::cin;
-using std::cout;
-using std::ios;
 
 int n;
-struct BNode {
-    
-};
-std::string s;
+int x;
 
-signed main()
-{
+void Contr() ;
+ll QuickPow(ll x, ll y, ll z) ;
+
+signed main() {
     ios::sync_with_stdio(false);
     cin.tie(0), cout.tie(0);
-
     
+    cin >> n;
+    ll len = pow(2, n);
     return 0;
+}
+
+void Contr() {
+    if(__builtin_popcount(0x7f)) {
+
+    }
+}
+
+ll QuickPow(ll x, ll y, ll z) {
+    ll ans = 1, base = x;
+    while(y > 0)
+    {
+        if(y & 1) ans *= base, ans %= z;
+        base *= base;
+        y >>= 1;
+    }
+    return ans;
 }

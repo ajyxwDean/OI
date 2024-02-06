@@ -3,6 +3,8 @@
 #include <cstdio>
 #include <vector>
 #include <cmath>
+#include <queue>
+#include <map>
 
 using namespace std;
 using ll = long long;
@@ -15,9 +17,11 @@ inline void IOS() {
 }
 
 void Solve();
+void bfs();
 
-int n, m;
-vector<int> a(N);
+queue<string> q;
+map<string, int> mp;
+string _end, _start = "12345678";
 
 signed main() {
     IOS();
@@ -26,8 +30,18 @@ signed main() {
 }
 
 void Solve() {
-    scanf("%d %d", &n, &m);
-    for(int i = 1; i <= n; i++) {
-        scanf("%d", &a[i]);
+    _end = "";
+    for(int i = 1; i <= 8; i++) {
+        char t = getchar();
+        _end += t;
+        getchar();
     }
+    cout << _end;
+    exit(0);
+//  _end -> _start
+    bfs();
+}
+
+void bfs() {
+    
 }
