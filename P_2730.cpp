@@ -19,9 +19,9 @@ inline void IOS() {
 void Solve();
 void bfs();
 
+string s;
 queue<string> q;
 map<string, int> mp;
-string _end, _start = "12345678";
 
 signed main() {
     IOS();
@@ -30,18 +30,16 @@ signed main() {
 }
 
 void Solve() {
-    _end = "";
     for(int i = 1; i <= 8; i++) {
         char t = getchar();
         _end += t;
         getchar();
     }
-    cout << _end;
-    exit(0);
 //  _end -> _start
     bfs();
 }
 
 void bfs() {
-    
+    q.push("12345678");
+    mp["12345678"] = 
 }
